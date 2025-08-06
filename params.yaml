@@ -1,0 +1,38 @@
+apiVersion: helm.toolkit.fluxcd.io/v2
+kind: ClastixParams
+metadata:
+  name: soris-stage
+spec:
+  repotag: 6.0.0
+  contract: CNT.19.0035.01
+  clustername: soris-stage
+  clusterdomain: soris-stage.local
+  apiserverip: 10.19.27.61
+  cpreplicas: 3
+  datastore: etcd-datastore
+  k8sversion: "1.32"
+  gatewayip: 10.119.1.254
+
+  dcname: EDA - Datacenter Elogic A - Produzione
+  dcurl: viceda01.elogic.it
+  dcthumbprint: 47:87:DC:58:AC:18:EA:14:B7:F1:60:A0:27:76:C9:B8:4E:58:7E:EC:AB:A2:AF:19:AE:D8:C9:53:71:2B:4D:BF
+  dccredsecret: vsphere-cluster-identity
+  dcpool: 
+  dcfolder: 
+  dcstorage: 
+  dcnetwork: 
+  dcvmtemplate: 
+
+  ipampool: 
+
+  nodesinfo:
+    - nodename: pluto
+      replicas: 2
+      cpu: 2
+      mbram: 4096
+      gbdisk: 150
+      nodetaints:
+  nodelabels:
+  sveltosapps:
+  - metallb
+
