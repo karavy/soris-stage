@@ -128,16 +128,16 @@ spec:
         #dataStore: "SANEDAE1090-001_LUN58"
         #dataStore: ""
         # -- VSphere folder to store VMs
-        folder: "" #"/EDA - Datacenter Elogic A - Produzione/vm/Kubernetes Environments/CNT.24.0238.04 - VDC KUBERNETES MAGGIOLI SORIS"
+        folder: "/EDA - Datacenter Elogic A - Produzione/vm/vcloud.elogic.it/Maggioli (9df7210e-a136-49f4-b199-149f420e7b03)/CNT.19.0035.01 - VDC IAAS DESTINAZIONE TU (710d28cd-ad1d-4cc0-87a7-31a6b5ef64c9)" #"/EDA - Datacenter Elogic A - Produzione/vm/Kubernetes Environments/CNT.24.0238.04 - VDC KUBERNETES MAGGIOLI SORIS"
         # -- VSphere resource pool to use
-        resourcePool: "" #"/EDA - Datacenter Elogic A - Produzione/host/ClusterEDA01-NSXT/Resources/CNT.24.0238.04 - VDC KUBERNETES MAGGIOLI SORIS"
+        resourcePool: "/EDA - Datacenter Elogic A - Produzione/host/ClusterEDA01/Resources/CNT.19.0035.01 - VDC IAAS DESTINAZIONE TU (710d28cd-ad1d-4cc0-87a7-31a6b5ef64c9)" #"/EDA - Datacenter Elogic A - Produzione/host/ClusterEDA01-NSXT/Resources/CNT.24.0238.04 - VDC KUBERNETES MAGGIOLI SORIS"
         # -- VSphere storage policy to use
-        storagePolicyName: "" #"DATA4_ENT-PLUS_K8S"
+        storagePolicyName: "/EDA - Datacenter Elogic A - Produzione/vm/Kubernetes Environments/CNT.24.0238.04 - VDC KUBERNETES MAGGIOLI SORIS" #"DATA4_ENT-PLUS_K8S"
         # -- VSphere template to clone
         #template: "/EDA - Datacenter Elogic A - Produzione/vm/Kubernetes Environments/ELOGIC/Developement CAPI/ubuntu-2204-kube-v1.30.0"
-        template: "" #"/EDA - Datacenter Elogic A - Produzione/vm/Kubernetes Environments/CNT.24.0263.01 - VDC MYMEMO/ubuntu-2404-kube-v1.31.0"
+        template: "10.19.6.1" #"/EDA - Datacenter Elogic A - Produzione/vm/Kubernetes Environments/CNT.24.0263.01 - VDC MYMEMO/ubuntu-2404-kube-v1.31.0"
         # -- VSphere network for VMs and CSI
-        network: "" #"/EDA - Datacenter Elogic A - Produzione/network/SORIS-COLL-K8S-f3ea44d0-ce69-4f9f-8691-d96c621375e4"
+        network: "pippo" #"/EDA - Datacenter Elogic A - Produzione/network/SORIS-COLL-K8S-f3ea44d0-ce69-4f9f-8691-d96c621375e4"
         # -- Number of worker VMs instances
         replicas: 2
         # -- Taints to add to the node pool when joining the cluster
